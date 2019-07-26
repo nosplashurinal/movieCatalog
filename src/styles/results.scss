@@ -1,0 +1,59 @@
+.results {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  p {
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 32px 0 48px 0;
+  }
+  .result-item {
+    flex: 0 0 calc(25% - 6px);
+    margin-right: 6px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    .placeholder {
+      position: relative;
+      width: calc(100% - 32px);
+      height: 250px;
+      content: 'Image not found';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 26px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    .poster {
+      width: auto;
+      height: 250px;
+    }
+    .description {
+      list-style-type: none;
+      margin: auto 1vw;
+      text-align: left;
+      li {
+        font-size: 14px;
+      }
+    }
+    &.no-image {
+      img {
+        display: none;
+      }
+      &:before {
+        position: relative;
+        width: calc(100% - 32px);
+        height: 250px;
+        content: 'Image not found';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 26px;
+        background: #f0f0f0;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.pagination {
+  width: 100%;
+  text-align: center;
+  margin: 32px auto;
+  li {
+    display: inline-block;
+    padding: 8px 16px;
+    line-height: 20px;
+    margin: 0;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background: rgba(#434343, 0.7);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  background: mediumturquoise;
+  width: 100%;
+  padding: 16px 0;
+  h1 {
+    color: white;
+    font-size: 26px;
+    margin: 0 32px;
+    white-space: nowrap;
+  }
+  .search {
+    flex: 0 1 100%;
+    padding-left: 8px;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 64px;
+    margin-right: 16px;
+    &:after {
+      content: "";
+      display: inline-block;
+      margin-left: 6px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #434343;
+    }
+  }
+}
